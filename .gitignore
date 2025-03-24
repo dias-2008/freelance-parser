@@ -1,15 +1,40 @@
 # Sensitive data
 .env
-parser.log
+*.log
+debug_*.html
 data/
-data/backups/
+debug_*/
+backups/
+
+# Credentials and debug files
+*_login_*.html
+*_response_*.html
+config.py
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
 venv/
+env/
+.env/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+.DS_Store
+
+# Excel files
+*.xlsx
+*.xls
+*.csv
